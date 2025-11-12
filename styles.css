@@ -195,6 +195,8 @@ main{
 }
 
 .card-apresentacao{
+    display: flex;
+    flex-flow: column wrap;
     background: #dff7e8;
     padding: 25px;
     border-radius: 16px;
@@ -205,10 +207,39 @@ main{
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.card-apresentacao p {
-  margin-bottom: 18px;
-  background: whitesmoke;
-  padding: 0.5em;
+.sobre-mim{
+    background-color: whitesmoke;
+    padding: 0.5em;
+    border-radius: 20px;
+    max-width: 100%;
+    width: 100%
+}
+
+.container-contatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.container-contatos a{
+    color: black;
+}
+
+.container-contatos a:hover{
+    color: black;
+    transform: translateY(-5px);
+        transition: transform 0.2s ease, box-shadow 0.2s ease-in-out;
+}
+
+.container-contatos a:active{
+    color: black !important;
+}
+
+.column-apresentacao{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 .btn-curriculo {
@@ -334,15 +365,15 @@ main{
 
 .project{
     display: flex;
-    flex: 1 1 30%;
+    flex: 1 1 0%;
     flex-direction: column;
     background: #dff7e8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 1em;
-    min-height: 15.3125em;
+    min-height: auto;
     min-width: 20em;
-    max-width: 40em;
+    max-width: 20em;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 
@@ -378,6 +409,9 @@ main{
     line-height: 1.2em;
     padding: 0.5em;
     font-size: 17px;
+    background: whitesmoke;
+    margin: 1em 0em;
+    border-radius: 10px;
 }
 
 .project-menu{
@@ -445,6 +479,45 @@ main{
   transform: rotate(-10deg) scale(1.1);
 }
 
+.img-certificado{
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    height: 15em;
+}
+
+.card-certificado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #dff7e8;
+    padding: 25px;
+    border-radius: 16px;
+    width: 45%;
+    max-width: 100%;
+    min-height: auto;
+    color: #222;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-certificado p{
+    background: whitesmoke;
+    padding: 0.5em;
+    width:auto;
+    border-radius: 10px;
+}
+
+.container-certificado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
 
 
 @media (max-width:1340px) {
@@ -470,6 +543,10 @@ main{
     .project {
         width: 95%;
         max-width: 100%;
+    }
+
+    .card-certificado{
+        margin-bottom: 20px;
     }
 }
 
@@ -514,6 +591,9 @@ main{
         min-width: auto;
         max-width: 95%;
         width: 95%;
+    }
+    .card-certificado {
+        width: 100%;
     }
 }
 

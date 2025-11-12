@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="text/javascript" src="script.js"></script>
 </head>
+
 <body>
     <nav>
         <div class="name-img">
@@ -26,33 +28,67 @@
         </button>
 
         <div class="menu-navbar" id="menu-navbar">
-            <a href="#"><h3>Inicio</h3></a>
+            <a href="#">
+                <h3>Inicio</h3>
+            </a>
         </div>
     </nav>
-    
+
     <div id="overlay" class="overlay" onclick="closeSide()"></div>
 
     <div class="sidebar" id="sidebar">
-        <a href="#"><h3>Inicio</h3></a>
+        <a href="#">
+            <h3>Inicio</h3>
+        </a>
     </div>
     <main>
-        <div>
-            <h1 style="margin: 1em 0em;">Sobre Mim</h1>
-            <div style="align-items: center; justify-content: center; display: flex;">
-                <div class="card-apresentacao">
-                    <p>
-                        Olá! Sou <strong>Lucas da Silva Alves</strong>, Desenvolvedor Full Stack com experiência em Android, sistemas e tecnologias como 
-                        <strong>Java</strong>, <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. 
-                        Apaixonado por criar soluções eficientes e inovadoras, busco sempre entregar projetos de qualidade. 
+        <h1 style="margin: 1.5em;"><i class="fas fa-user"></i> Sobre Mim</h1>
+        <div style="align-items: center; justify-content: center; display: flex;">
+            <div class="card-apresentacao">
+                <div class="column-apresentacao">
+                    <p class="sobre-mim">
+                        Olá! Sou <strong>Lucas da Silva Alves</strong>, Desenvolvedor Full Stack com experiência em
+                        Android, sistemas e tecnologias como
+                        <strong>Java</strong>, <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong> e
+                        <strong>JavaScript</strong>, entre outras.
+                        Buscando criar soluções eficientes e inovadoras, aprendendo sempre e entregando projetos de
+                        qualidade.
                         Falo Português e Inglês fluentemente e estou aberto a novos desafios.
                     </p>
-
+                </div>
+                <div class="container-contatos">
                     <a href="docs/Lucas da Silva Alves - Currículo.pdf" class="btn-curriculo" download>
                         <i class="fa-solid fa-download"></i> Baixar Currículo
                     </a>
+                    <a href="https://wa.me/12997673470">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/lucas-da-silva-alves-18852b2b3?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/LuccasLukaDev">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
                 </div>
             </div>
-            <h1 style="margin: 1em 0em;">Formações, Linguagens e Tecnologias Conhecidas</h1>
+        </div>
+        <div>
+            <h1 style="margin: 1.5em 0em;"><i class="fas fa-bullseye"></i> Objetivo</h1>
+            <div style="align-items: center; justify-content: center; display: flex;">
+                <div class="card-apresentacao">
+                    <div class="column-apresentacao">
+                        <p class="sobre-mim">
+                            Tenho como objetivo atuar como <strong>Desenvolvedor de Software Fullstack</strong>, contribuindo no
+                            planejamento, desenvolvimento e manutenção de sistemas. Tenho foco em qualidade de código,
+                            aprendizado contínuo e boas práticas de engenharia de software, buscando sempre entregar
+                            soluções eficientes, seguras e alinhadas às necessidades do cliente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin: 2em 0em;"><i class="fas fa-project-diagram"></i> Formações, Linguagens e Tecnologias
+                Conhecidas</h1>
             <div class="main-page">
                 <div class="card-formacoes">
                     <div class="formacoes">
@@ -78,59 +114,104 @@
                         <p>Alemão <br> Japones</p>
                     </div>
                 </div>
-                <h1><i class="fas fa-laptop-code"></i> Tecnologias</h1>
+                <h1 style="margin: 1.5em 0em;"><i class="fas fa-laptop-code"></i> Tecnologias</h1>
                 <div class="card-tecnologias">
                     <div class="container-techs">
                         <p>Front-end</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-                        <img class="tech-img" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                            alt="HTML5">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                            alt="CSS3">
                     </div>
                     <div class="container-techs">
                         <p>Hybridas / Fullstack</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
-                        <img class="tech-img" src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
-                        <img class="tech-img" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C">
-                        <img class="tech-img" src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C++">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                            alt="JavaScript">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
+                            alt="Kotlin">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                            alt="C">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+                            alt="C++">
                     </div>
                     <div class="container-techs">
                         <p>Back-end</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                        <img class="tech-img" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
-                        <img class="tech-img" src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                        <img class="tech-img" src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                        <img class="tech-img" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                            alt="Java">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                            alt="Python">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                            alt="MySQL">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+                            alt="AWS">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
+                            alt="PHP">
                     </div>
                     <div class="container-techs">
                         <p>Bibliotecas</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
-                        <img class="tech-img" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy">
-                        <img class='tech-img' src="https://img.shields.io/badge/plotly-3F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly Dash">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
+                            alt="Pandas">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
+                            alt="Numpy">
+                        <img class='tech-img'
+                            src="https://img.shields.io/badge/plotly-3F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white"
+                            alt="Plotly Dash">
                     </div>
                     <div class="container-techs">
                         <p>Frameworks</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-                        <img class="tech-img" src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37" alt="Expo">
-                        <img class="tech-img" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
-                        <img class="tech-img" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React-Native">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
+                            alt="Flask">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"
+                            alt="Expo">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                            alt="Bootstrap">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                            alt="React-Native">
                     </div>
                     <div class="container-techs">
                         <p>Ferramentas de Versionamento</p>
-                        <img class="tech-img" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github">
-                        <img class="tech-img" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                            alt="Github">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+                            alt="Git">
+                        <img class="tech-img"
+                            src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+                            alt="Git">
                     </div>
                 </div>
             </div>
             <div class="side">
-                <h1 style="margin: 1em 0em;">Experiências</h1>
+                <h1 style="margin: 1.5em 0em;"><i class="fas fa-briefcase"></i> Experiências</h1>
                 <section class="experiencia" id="experiencia">
                     <div class="xp-card">
                         <h3>Estagiário em Desenvolvimento Android</h3>
                         <p class="empresa">IT Fast - Soluções | 2022 - 2023</p>
                         <ul>
-                        <li>Suporte técnico a desenvolvedores que utilizavam a biblioteca <strong>it4r</strong> (antiga DarumaFramework).</li>
-                        <li>Integração com dispositivos de varejo e impressoras térmicas fiscais e não fiscais.</li>
-                        <li>Desenvolvimento de apps demonstrativos para dispositivos Android da Tectoy (PDVs, Totens e Mini PDVs).</li>
-                        <li>Participação em apresentações e eventos corporativos.</li>
+                            <li>Suporte técnico a desenvolvedores que utilizavam a biblioteca <strong>it4r</strong>
+                                (antiga DarumaFramework).</li>
+                            <li>Integração com dispositivos de varejo e impressoras térmicas fiscais e não fiscais.</li>
+                            <li>Desenvolvimento de apps demonstrativos para dispositivos Android da Tectoy (PDVs, Totens
+                                e Mini PDVs).</li>
+                            <li>Participação em apresentações e eventos corporativos.</li>
                         </ul>
                     </div>
 
@@ -138,22 +219,25 @@
                         <h3>Estagiário Administrativo</h3>
                         <p class="empresa">Pássaro Marron | 2023 - 2024</p>
                         <ul>
-                        <li>Suporte a funcionários em processos administrativos e controle de frequência.</li>
-                        <li>Criação e análise de planilhas de horas, banco de horas e horas extras.</li>
-                        <li>Monitoramento de sistema de localização de ônibus em tempo real.</li>
+                            <li>Suporte a funcionários em processos administrativos e controle de frequência.</li>
+                            <li>Criação e análise de planilhas de horas, banco de horas e horas extras.</li>
+                            <li>Monitoramento de sistema de localização de ônibus em tempo real.</li>
                         </ul>
                     </div>
-                    </section>
+                </section>
 
-                <h1 style="margin: 1em 0em;"><i class="fas fa-code"></i> Meus Projetos</h1>
+                <h1 style="margin: 1.5em 0em;"><i class="fas fa-code"></i> Meus Projetos</h1>
                 <div class="projects-main">
                     <div class="project">
                         <div class="project-content">
                             <h2>Site RPG</h2>
                             <img class="project-img" src="img/siterpg.png" alt="placeholder.png">
                             <div class="project-description">
-                                <p>Trabalho acadêmico — FATEC</p>
-                                <p>Desenvolvi o site temático SiteRPG, uma interface envolvente em HTML e CSS que evoca o universo dos jogos de RPG. O projeto prioriza design imersivo e usabilidade, oferecendo aos usuários uma navegação fluida e estética adaptada ao ambiente gamer.</p>
+                                <p><strong>Trabalho acadêmico — FATEC</strong></p>
+                                <p>Desenvolvi o site temático SiteRPG, uma interface envolvente em HTML e CSS que evoca
+                                    o universo dos jogos de RPG. O projeto prioriza design imersivo e usabilidade,
+                                    oferecendo aos usuários uma navegação fluida e estética adaptada ao ambientação.
+                                </p>
                             </div>
                         </div>
                         <div class="project-menu">
@@ -168,15 +252,17 @@
                                 Confira aqui
                             </a>
                         </div>
-                        
+
                     </div>
                     <div class="project">
                         <div class="project-content">
                             <h2>Janosys API</h2>
                             <img class="project-img" src="img/janosys.png" alt="placeholder.png">
                             <div class="project-description">
-                                <p>Trabalho acadêmico — FATEC</p>
-                                <p>Dashboard de dados do Censo 2022 com Python, Flask e MySQL, focado em visualização e análise de informações públicas.</p>
+                                <p><strong>Trabalho acadêmico — FATEC</strong></p>
+                                <p>Dashboard de dados do Censo 2022 e 2010 com Python (Pandas, Plotly), Flask, fiz parte
+                                    do desenvolvimento tanto na filtragem e exibição dos dados quanto da concepção e
+                                    aperfeiçoamento do UI/ UX seguindo especificações do cliente.</p>
                             </div>
                         </div>
                         <div class="project-menu">
@@ -193,9 +279,32 @@
                         </div>
                     </div>
                 </div>
+
+                <h1 style="margin: 1.5em 0em;"><i class="fas fa-certificate"></i> Certificados</h1>
+                <div class="container-certificado">
+                    <div class="card-certificado">
+                        <img src="img/inovadores.png" alt="inovadores.png" class="img-certificado">
+                        <p>
+                            <strong>Escola de Inovadores – Inova CPS / Centro Paula Souza</strong><br>
+                            Curso de capacitação em empreendedorismo e inovação, com foco em transformar ideias em
+                            modelos de negócio. Aborda temas como gestão, marketing, tecnologia, prototipagem e
+                            plano de negócios.
+                        </p>
+                    </div>
+
+                    <div class="card-certificado">
+                        <img src="img/pit.png" alt="inovadores.png" class="img-certificado">
+                        <p>
+                            <strong>Participação no evento Science & Business Connection</strong><br>
+                            Evento que promove a integração entre ciência, tecnologia e empreendedorismo. Reúne
+                            pesquisadores, estudantes e empresas para discutir inovação, pesquisa aplicada e
+                            oportunidades de negócios.
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
     </main>
-    <footer>© 2025 Todos os direitos reservados </footer>
+    <footer>© 2025 Todos os direitos reservados</footer>
 </body>
+
 </html>
