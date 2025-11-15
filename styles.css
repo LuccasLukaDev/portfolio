@@ -1,4 +1,8 @@
 /* GENERAL */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: gray;
     margin: 0;
@@ -11,7 +15,6 @@ body{
 * {
     box-sizing: border-box;
 }
-
 /* HEADER */
 .sidebar{
     position: fixed;
@@ -37,6 +40,12 @@ body{
 .sidebar a{
     text-decoration: none;
     color: #c4d7c4;
+    width: 100%;
+}
+
+.sidebar h3{
+    text-align: left;
+    width: auto;
 }
 
 .sidebar a:hover{
@@ -194,6 +203,12 @@ main{
     width: auto;
 }
 
+.main-page > h1{
+    flex-basis: 100%;
+    width: 100%;
+    text-align: center;
+}
+
 .card-apresentacao{
     display: flex;
     flex-flow: column wrap;
@@ -212,7 +227,7 @@ main{
     padding: 0.5em;
     border-radius: 20px;
     max-width: 100%;
-    width: 100%
+    width:100%
 }
 
 .container-contatos{
@@ -278,7 +293,7 @@ main{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 0.5em;
-    width: 50%;
+    width:95%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -314,11 +329,14 @@ main{
 }
 
 .card-tecnologias{
-    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em;
     background: #dff7e8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    width: 45%;
+    width: 95%;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -340,8 +358,9 @@ main{
 
 .container-techs{
     background: white;
+    width: 95%;
     margin: 0.5em;
-    padding: 0em 0em;
+    height: auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -351,6 +370,10 @@ main{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+.control-tech{
+    flex-basis: 50%;
+    width: 50%;
 }
 
 .projects-main{
@@ -365,15 +388,15 @@ main{
 
 .project{
     display: flex;
-    flex: 1 1 0%;
+    flex: 1 1 30%;
     flex-direction: column;
     background: #dff7e8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 1em;
     min-height: auto;
-    min-width: 20em;
-    max-width: 20em;
+    min-width: 40em;
+    max-width: 40em;
     transition: transform 0.4s ease, box-shadow 0.2s ease;
 }
 
@@ -483,40 +506,45 @@ main{
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    width: 95%;
-    height: 15em;
+    width: 50%;
+    height: 12em;
+    align-self: center;
 }
 
 .card-certificado{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-flow: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: stretch;
     background: #dff7e8;
     padding: 25px;
     border-radius: 16px;
-    width: 45%;
-    max-width: 100%;
-    min-height: auto;
+    min-height: fit-content;
     color: #222;
+    flex: 1 1 500px;
+    margin: 0em 0.5em; 
     font-size: 0.95rem;
     line-height: 1.5;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .card-certificado p{
+    text-align: left;
     background: whitesmoke;
-    padding: 0.5em;
     width:auto;
     border-radius: 10px;
+    margin: 0;
 }
 
 .container-certificado{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    align-items: stretch;
     margin-bottom: 20px;
+    height: fit-content;
 }
 
 
@@ -533,20 +561,29 @@ main{
         max-width: 95%;
         width: 95%;
     }
-
     
     .card-tecnologias{
         min-width: auto;
         max-width: 95%;
         width: 95%;
-    }
-    .project {
-        width: 95%;
-        max-width: 100%;
+        flex-flow: column wrap;
     }
 
+    .control-tech{
+        width: 95%;
+    }
+
+    .project {
+        width: 95%;
+        max-width: 95%;
+    }
+    
+    .container-certificado{
+        gap: 10px;
+    }
     .card-certificado{
-        margin-bottom: 20px;
+        min-width: 40%;
+        margin: 0;
     }
 }
 
@@ -593,18 +630,23 @@ main{
         width: 95%;
     }
     .card-certificado {
-        width: 100%;
+        width: 95%;
     }
 }
 
 @media (max-width: 650px) {
     .card-formacoes h2, p{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .card-formacoes h4{
+        font-size: 15px;
+    }
+
+    .card-certificado {
         font-size: 13px;
     }
+    
 }
 
 @media(max-width: 556px){
@@ -631,6 +673,7 @@ main{
         min-width: auto;
         max-width: 100%;
         width: 100%;
+        height: fit-content;
     }
 
     .projects-main{
@@ -641,8 +684,8 @@ main{
     }
 
     .project {
-        width: 95%;
-        max-width: 95%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .project-description p {
@@ -651,6 +694,25 @@ main{
 
     .project-img{
         min-height: 10em;
+    }
+
+    .card-certificado p{
+        font-size: 14px;
+        margin: 15px 0px;
+    }
+    
+    .card-certificado{
+        flex-direction: column;
+    }
+
+    .img-certificado{
+        width: 100%;
+        height: 20em;
+    }
+
+    .experiencia {
+        width: 100% !important; 
+        max-width: 100% !important;
     }
 }
 
@@ -663,9 +725,9 @@ footer{
 
 /* EXPERIENCIAS */
 .experiencia {
-  width: 100%; 
-  max-width: 1300px;
-  padding: 60px 20px;
+  width: 95%; 
+  max-width: 95%;
+  padding: 10px 15px;
   background: #dff7e8;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -674,7 +736,7 @@ footer{
 .experiencia h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #007bff;
 }
 

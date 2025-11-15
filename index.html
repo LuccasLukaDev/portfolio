@@ -37,12 +37,16 @@
     <div id="overlay" class="overlay" onclick="closeSide()"></div>
 
     <div class="sidebar" id="sidebar">
-        <a href="#">
-            <h3>Inicio</h3>
-        </a>
+        <a href="#sobre"><h3><i class="fas fa-user"></i>  Sobre Mim</h3></a>
+        <a href="#objetivo"><h3><i class="fas fa-bullseye"></i> Objetivo</h3></a>
+        <a href="#formacoes"><h3><i class="fas fa-project-diagram"></i> Formações</h3></a>
+        <a href="#tecnologias"><h3><i class="fas fa-laptop-code"></i> Tecnologias</h3></a>
+        <a href="#experiencias"><h3><i class="fas fa-briefcase"></i> Experiências</h3></a>
+        <a href="#projetos"><h3><i class="fas fa-code"></i> Projetos</h3></a>
+        <a href="#certificados"><h3><i class="fas fa-certificate"></i> Certificados</h3></a>
     </div>
     <main>
-        <h1 style="margin: 1.5em;"><i class="fas fa-user"></i> Sobre Mim</h1>
+        <h1 id="sobre" style="margin: 1.5em;"><i class="fas fa-user"></i> Sobre Mim</h1>
         <div style="align-items: center; justify-content: center; display: flex;">
             <div class="card-apresentacao">
                 <div class="column-apresentacao">
@@ -74,12 +78,12 @@
             </div>
         </div>
         <div>
-            <h1 style="margin: 1.5em 0em;"><i class="fas fa-bullseye"></i> Objetivo</h1>
+            <h1 id="objetivo" style="margin: 1.5em 0em;"><i class="fas fa-bullseye"></i> Objetivo</h1>
             <div style="align-items: center; justify-content: center; display: flex;">
                 <div class="card-apresentacao">
                     <div class="column-apresentacao">
                         <p class="sobre-mim">
-                            Tenho como objetivo atuar como <strong>Desenvolvedor de Software Fullstack</strong>, contribuindo no
+                            Continuar atuando como <strong>Desenvolvedor de Software Fullstack</strong>, contribuindo no
                             planejamento, desenvolvimento e manutenção de sistemas. Tenho foco em qualidade de código,
                             aprendizado contínuo e boas práticas de engenharia de software, buscando sempre entregar
                             soluções eficientes, seguras e alinhadas às necessidades do cliente.
@@ -87,8 +91,7 @@
                     </div>
                 </div>
             </div>
-            <h1 style="margin: 2em 0em;"><i class="fas fa-project-diagram"></i> Formações, Linguagens e Tecnologias
-                Conhecidas</h1>
+            <h1 id="formacoes" style="margin: 2em 0em;"><i class="fas fa-project-diagram"></i> Formações e Linguas</h1>
             <div class="main-page">
                 <div class="card-formacoes">
                     <div class="formacoes">
@@ -114,97 +117,101 @@
                         <p>Alemão <br> Japones</p>
                     </div>
                 </div>
-                <h1 style="margin: 1.5em 0em;"><i class="fas fa-laptop-code"></i> Tecnologias</h1>
+                <h1 id="tecnologias" style="margin: 1.5em 0em;"><i class="fas fa-laptop-code"></i> Tecnologias</h1>
                 <div class="card-tecnologias">
-                    <div class="container-techs">
-                        <p>Front-end</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                            alt="HTML5">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-                            alt="CSS3">
+                    <div class="control-tech">
+                        <div class="container-techs">
+                            <p>Front-end</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                                alt="HTML5">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                                alt="CSS3">
+                        </div>
+                        <div class="container-techs">
+                            <p>Hybridas / Fullstack</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+                                alt="JavaScript">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
+                                alt="Kotlin">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                                alt="C">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
+                                alt="C++">
+                        </div>
+                        <div class="container-techs">
+                            <p>Back-end</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                                alt="Java">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                                alt="Python">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+                                alt="MySQL">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+                                alt="AWS">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
+                                alt="PHP">
+                        </div>
                     </div>
-                    <div class="container-techs">
-                        <p>Hybridas / Fullstack</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                            alt="JavaScript">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
-                            alt="Kotlin">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-                            alt="C">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-                            alt="C++">
-                    </div>
-                    <div class="container-techs">
-                        <p>Back-end</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
-                            alt="Java">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-                            alt="Python">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
-                            alt="MySQL">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
-                            alt="AWS">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
-                            alt="PHP">
-                    </div>
-                    <div class="container-techs">
-                        <p>Bibliotecas</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
-                            alt="Pandas">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
-                            alt="Numpy">
-                        <img class='tech-img'
-                            src="https://img.shields.io/badge/plotly-3F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white"
-                            alt="Plotly Dash">
-                    </div>
-                    <div class="container-techs">
-                        <p>Frameworks</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
-                            alt="Flask">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"
-                            alt="Expo">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-                            alt="Bootstrap">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                            alt="React-Native">
-                    </div>
-                    <div class="container-techs">
-                        <p>Ferramentas de Versionamento</p>
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
-                            alt="Github">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-                            alt="Git">
-                        <img class="tech-img"
-                            src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
-                            alt="Git">
+                    <div class="control-tech">
+                        <div class="container-techs">
+                            <p>Bibliotecas</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
+                                alt="Pandas">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
+                                alt="Numpy">
+                            <img class='tech-img'
+                                src="https://img.shields.io/badge/plotly-3F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white"
+                                alt="Plotly Dash">
+                        </div>
+                        <div class="container-techs">
+                            <p>Frameworks</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
+                                alt="Flask">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"
+                                alt="Expo">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                                alt="Bootstrap">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                                alt="React-Native">
+                        </div>
+                        <div class="container-techs">
+                            <p>Ferramentas de Versionamento</p>
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                                alt="Github">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+                                alt="Git">
+                            <img class="tech-img"
+                                src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+                                alt="Git">
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="side">
-                <h1 style="margin: 1.5em 0em;"><i class="fas fa-briefcase"></i> Experiências</h1>
+                <h1 id="experiencias" style="margin: 1.5em 0em;"><i class="fas fa-briefcase"></i> Experiências</h1>
                 <section class="experiencia" id="experiencia">
                     <div class="xp-card">
                         <h3>Estagiário em Desenvolvimento Android</h3>
-                        <p class="empresa">IT Fast - Soluções | 2022 - 2023</p>
+                        <p class="empresa">IT Fast - Soluções | 2023 - 2024</p>
                         <ul>
                             <li>Suporte técnico a desenvolvedores que utilizavam a biblioteca <strong>it4r</strong>
                                 (antiga DarumaFramework).</li>
@@ -217,7 +224,7 @@
 
                     <div class="xp-card">
                         <h3>Estagiário Administrativo</h3>
-                        <p class="empresa">Pássaro Marron | 2023 - 2024</p>
+                        <p class="empresa">Pássaro Marron | 2022 - 2023</p>
                         <ul>
                             <li>Suporte a funcionários em processos administrativos e controle de frequência.</li>
                             <li>Criação e análise de planilhas de horas, banco de horas e horas extras.</li>
@@ -226,7 +233,7 @@
                     </div>
                 </section>
 
-                <h1 style="margin: 1.5em 0em;"><i class="fas fa-code"></i> Meus Projetos</h1>
+                <h1 id="projetos" style="margin: 1.5em 0em;"><i class="fas fa-code"></i> Meus Projetos</h1>
                 <div class="projects-main">
                     <div class="project">
                         <div class="project-content">
@@ -280,26 +287,31 @@
                     </div>
                 </div>
 
-                <h1 style="margin: 1.5em 0em;"><i class="fas fa-certificate"></i> Certificados</h1>
+                <h1 id="certificados" style="margin: 1.5em 0em;"><i class="fas fa-certificate"></i> Certificados</h1>
                 <div class="container-certificado">
                     <div class="card-certificado">
                         <img src="img/inovadores.png" alt="inovadores.png" class="img-certificado">
-                        <p>
-                            <strong>Escola de Inovadores – Inova CPS / Centro Paula Souza</strong><br>
-                            Curso de capacitação em empreendedorismo e inovação, com foco em transformar ideias em
-                            modelos de negócio. Aborda temas como gestão, marketing, tecnologia, prototipagem e
-                            plano de negócios.
-                        </p>
+                        <div class="project-description">
+                            <p><strong>Escola de Inovadores – Inova CPS</strong></p>
+                            <p>
+                                Curso de capacitação em empreendedorismo e inovação, com foco em transformar ideias em
+                                modelos de negócio. Aborda temas como gestão, marketing, tecnologia, prototipagem e
+                                plano de negócios.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="card-certificado">
+                        
                         <img src="img/pit.png" alt="inovadores.png" class="img-certificado">
-                        <p>
-                            <strong>Participação no evento Science & Business Connection</strong><br>
-                            Evento que promove a integração entre ciência, tecnologia e empreendedorismo. Reúne
-                            pesquisadores, estudantes e empresas para discutir inovação, pesquisa aplicada e
-                            oportunidades de negócios.
-                        </p>
+                        <div class="project-description">
+                            <p><strong>Science & Business Connection - PIT</strong></p>
+                            <p>
+                                Evento que promove a integração entre ciência, tecnologia e empreendedorismo. Reúne
+                                pesquisadores, estudantes e empresas para discutir inovação, pesquisa aplicada e
+                                oportunidades de negócios.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
