@@ -1,0 +1,15 @@
+function showSide(){
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    
+    sidebar.classList.toggle('show');
+    overlay.classList.toggle('show');
+}
+
+function closeSide(){
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    sidebar.classList.remove('show');
+    overlay.classList.remove('show')
+}
