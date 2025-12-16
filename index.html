@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Lucas da Silva Alves</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scripts/sidebar.js"></script>
 </head>
 
 <body>
     <nav>
         <div class="name-img">
-            <img class="self-img" alt="foto_lucas.jpeg" src="img/foto_lucas_curriculo.jpeg">
+            <img class="self-img" alt="foto_lucas.jpeg" src="src/img/foto_lucas_curriculo.jpeg">
             <div>
                 <h1>Lucas da Silva Alves</h1>
                 <h3>Desenvolvedor Fullstack</h2>
@@ -61,7 +61,7 @@
                     </p>
                 </div>
                 <div class="container-contatos">
-                    <a href="docs/Lucas da Silva Alves - Currículo.pdf" class="btn-curriculo" download>
+                    <a href="src/docs/Lucas da Silva Alves - Currículo.pdf" class="btn-curriculo" download>
                         <i class="fa-solid fa-download"></i> Baixar Currículo
                     </a>
                     <a href="https://wa.me/12997673470">
@@ -83,7 +83,7 @@
                 <div class="card-apresentacao">
                     <div class="column-apresentacao">
                         <p class="sobre-mim">
-                            Continuar atuando como <strong>Desenvolvedor de Software Fullstack</strong>, contribuindo no
+                            Atuar como <strong>Desenvolvedor de Software Fullstack</strong>, contribuindo no
                             planejamento, desenvolvimento e manutenção de sistemas. Tenho foco em qualidade de código,
                             aprendizado contínuo e boas práticas de engenharia de software, buscando sempre entregar
                             soluções eficientes, seguras e alinhadas às necessidades do cliente.
@@ -119,89 +119,65 @@
                 </div>
                 <h1 id="tecnologias" style="margin: 1.5em 0em;"><i class="fas fa-laptop-code"></i> Tecnologias</h1>
                 <div class="card-tecnologias">
-                    <div class="control-tech">
-                        <div class="container-techs">
-                            <p>Front-end</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                                alt="HTML5">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-                                alt="CSS3">
-                        </div>
-                        <div class="container-techs">
-                            <p>Hybridas / Fullstack</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                                alt="JavaScript">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
-                                alt="Kotlin">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-                                alt="C">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-                                alt="C++">
-                        </div>
-                        <div class="container-techs">
-                            <p>Back-end</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
-                                alt="Java">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-                                alt="Python">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
-                                alt="MySQL">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
-                                alt="AWS">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
-                                alt="PHP">
+                    <div class="tech-categorias">
+                        <h3>Front-end</h3>
+                        <div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
+                            </div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original-wordmark.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                            </div>
                         </div>
                     </div>
-                    <div class="control-tech">
-                        <div class="container-techs">
-                            <p>Bibliotecas</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
-                                alt="Pandas">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
-                                alt="Numpy">
-                            <img class='tech-img'
-                                src="https://img.shields.io/badge/plotly-3F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white"
-                                alt="Plotly Dash">
+
+                    <div class="tech-categorias">
+                        <h3>Back-end</h3>
+                        <div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+                            </div>
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg"/>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"/>
+                            </div>
                         </div>
-                        <div class="container-techs">
-                            <p>Frameworks</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"
-                                alt="Flask">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37"
-                                alt="Expo">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
-                                alt="Bootstrap">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                                alt="React-Native">
+                    </div>
+
+                    <div class="tech-categorias">
+                        <h3>Nuvem & DevOps</h3>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg"/>
                         </div>
-                        <div class="container-techs">
-                            <p>Ferramentas de Versionamento</p>
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
-                                alt="Github">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-                                alt="Git">
-                            <img class="tech-img"
-                                src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
-                                alt="Git">
+                    </div>
+
+                    <div class="tech-categorias">
+                        <h3>Mobile</h3>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original-wordmark.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+                        </div>
+                    </div>
+
+                    <div class="tech-categorias">
+                        <h3>Geral & Desktop</h3>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>
+                        </div>
+                    </div>
+
+                    <div class="tech-categorias">
+                        <h3>Version Control</h3>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"/>
                         </div>
                     </div>
                 </div>
@@ -238,7 +214,7 @@
                     <div class="project">
                         <div class="project-content">
                             <h2>Site RPG</h2>
-                            <img class="project-img" src="img/siterpg.png" alt="placeholder.png">
+                            <img class="project-img" src="src/img/siterpg.png" alt="placeholder.png">
                             <div class="project-description">
                                 <p><strong>Trabalho acadêmico — FATEC</strong></p>
                                 <p>Desenvolvi o site temático SiteRPG, uma interface envolvente em HTML e CSS que evoca
@@ -264,7 +240,7 @@
                     <div class="project">
                         <div class="project-content">
                             <h2>Janosys API</h2>
-                            <img class="project-img" src="img/janosys.png" alt="placeholder.png">
+                            <img class="project-img" src="src/img/janosys.png" alt="placeholder.png">
                             <div class="project-description">
                                 <p><strong>Trabalho acadêmico — FATEC</strong></p>
                                 <p>Dashboard de dados do Censo 2022 e 2010 com Python (Pandas, Plotly), Flask, fiz parte
@@ -290,7 +266,7 @@
                 <h1 id="certificados" style="margin: 1.5em 0em;"><i class="fas fa-certificate"></i> Certificados</h1>
                 <div class="container-certificado">
                     <div class="card-certificado">
-                        <img src="img/inovadores.png" alt="inovadores.png" class="img-certificado">
+                        <img src="src/img/inovadores.png" alt="inovadores.png" class="img-certificado">
                         <div class="project-description">
                             <p><strong>Escola de Inovadores – Inova CPS</strong></p>
                             <p>
@@ -303,7 +279,7 @@
 
                     <div class="card-certificado">
                         
-                        <img src="img/pit.png" alt="inovadores.png" class="img-certificado">
+                        <img src="src/img/pit.png" alt="inovadores.png" class="img-certificado">
                         <div class="project-description">
                             <p><strong>Science & Business Connection - PIT</strong></p>
                             <p>
