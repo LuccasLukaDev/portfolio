@@ -213,7 +213,7 @@ main{
     display: flex;
     flex-flow: column wrap;
     background: #dff7e8;
-    padding: 25px;
+    padding: 0.5em 0.5em;
     border-radius: 16px;
     max-width: 95%;
     color: #222;
@@ -223,11 +223,12 @@ main{
 }
 
 .sobre-mim{
-    background-color: whitesmoke;
+    background-color: white;
     padding: 0.5em;
     border-radius: 20px;
     max-width: 100%;
-    width:100%
+    width:100%;
+    margin: 0em 0em 0.5em 0em;
 }
 
 .container-contatos{
@@ -244,7 +245,7 @@ main{
 .container-contatos a:hover{
     color: black;
     transform: translateY(-5px);
-        transition: transform 0.2s ease, box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s ease, box-shadow 0.2s ease-in-out;
 }
 
 .container-contatos a:active{
@@ -330,39 +331,54 @@ main{
 
 .card-tecnologias{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    padding: 0em;
     background: #dff7e8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     width: 95%;
+    gap: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-tecnologias ul{
-    padding: 0;
-    margin: 0em 0em 1em 0em;
-    list-style: none;
+.tech-wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
-.card-tecnologias p {
-    margin-bottom: 0.5em;
-    font-weight: bold;
+.tech-categorias{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    width: 48.8%;
+    margin: 0.5em 0em;
+    padding: 1em 0em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.tech-img{
-    border-radius: 10px;
-    margin: 0.1em;
+.tech-categorias h3{
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
 }
 
-.container-techs{
-    background: white;
-    width: 95%;
+.card-tecnologias img{
+    width: 20%;
     margin: 0.5em;
-    height: auto;
+    padding: 1em;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.card-tecnologias img:hover{
+    transform: translateY(-5px);
+    transition: transform 0.5s ease;
 }
 
 .side{
@@ -370,10 +386,6 @@ main{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
-.control-tech{
-    flex-basis: 50%;
-    width: 50%;
 }
 
 .projects-main{
@@ -432,7 +444,7 @@ main{
     line-height: 1.2em;
     padding: 0.5em;
     font-size: 17px;
-    background: whitesmoke;
+    background: white;
     margin: 1em 0em;
     border-radius: 10px;
 }
@@ -531,7 +543,7 @@ main{
 
 .card-certificado p{
     text-align: left;
-    background: whitesmoke;
+    background: white;
     width:auto;
     border-radius: 10px;
     margin: 0;
@@ -569,8 +581,12 @@ main{
         flex-flow: column wrap;
     }
 
-    .control-tech{
-        width: 95%;
+    .card-tecnologias img{
+        margin: 0.5em;
+    }
+
+    .tech-categorias{
+        width: 98%;
     }
 
     .project {
@@ -622,6 +638,16 @@ main{
         min-width: auto;
         max-width: 95%;
         width: 95%;
+        gap: 0px;
+    }
+
+    .tech-categorias{
+        width: 95%;
+    }
+
+    .card-tecnologias img{
+        width: 20%;
+        margin: 0.2em;
     }
 
     .project {
@@ -674,6 +700,11 @@ main{
         max-width: 100%;
         width: 100%;
         height: fit-content;
+    }
+
+    .card-tecnologias img{
+        width: 25%;
+        margin: 0.2em;
     }
 
     .projects-main{
@@ -788,11 +819,3 @@ footer{
 
 /* ANIMAÇÕES */
 
-@keyframes tech-icon {
-    0%{
-        transform: translateY(3px);
-    }
-    100%{
-        transform: translateY(0px)
-    }
-}
